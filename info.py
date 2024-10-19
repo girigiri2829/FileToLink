@@ -7,8 +7,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '23049826'))
 API_HASH = environ.get('API_HASH', '4a4216f089ce68a3ce2c8b9b9a6fa79a')
-BOT_TOKEN = environ.get('BOT_TOKEN', "
-")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 PORT = environ.get("PORT", "8080")
@@ -18,7 +17,7 @@ MULTI_CLIENT = True
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
-    ON_HEROKU = False 
+    ON_HEROKU = True 
 else:
     ON_HEROKU = False
 URL = environ.get("URL", "")
