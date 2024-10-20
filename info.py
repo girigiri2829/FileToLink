@@ -31,6 +31,6 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://aman:hdhub4net@cluster
 DATABASE_NAME = environ.get('DATABASE_NAME', "hdhub4net")
 
 # Shortlink Info
-SHORTLINK = bool(environ.get('SHORTLINK', True)) # Set True Or False
+SHORTLINK = bool(environ.get('SHORTLINK', False)) # Set True Or False
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Bindaaslinks.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '976f2f780eba85cad2cc5b00005e5e1b110d3903')
